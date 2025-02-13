@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Zen Dots Regular"; /*a name to be used later*/
+  src: url("./fonts/Zen_Dots/ZenDots-Regular.ttf"); /*URL to font*/
+}
+
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;1,300&display=swap");
+
+* {
+  font-family: "Zen Dots Regular";
+}
+
+.zen-dots-regular {
+  font-family: "Zen Dots Regular";
+}
+
+.fira-code-300 {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fira-code-400 {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-code-500 {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-code-600 {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-code-700 {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.jetbrains-mono-300 {
+  font-family: "JetBrains Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}

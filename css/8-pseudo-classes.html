@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./8-pseudo-classes.css" />
+    <title>CSS Pseudo classes</title>
+  </head>
+  <body>
+    <h4>:hover</h4>
+    <div class="container">
+      <div class="box box-hover"></div>
+      <div class="box box-hover-anim"></div>
+    </div>
+
+    <h4>:visited</h4>
+    <div class="container">
+      <a class="visited" href="https://github.com/struckchure/" target="_blank"
+        >struckchure (github)</a
+      >
+      <a class="visited" href="https://x.com/struckchure/" target="_blank"
+        >struckchure(x)</a
+      >
+    </div>
+
+    <h4>:nth-child, :first-child, :last-child</h4>
+    <div class="container horizontal-boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h4>:nth-child(even), :nth-child(odd)</h4>
+    <div class="container vertical-boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <h4>:focus</h4>
+    <div class="container">
+      <input class="input-field" />
+    </div>
+  </body>
+</html>

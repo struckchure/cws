@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to CSS</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="./1-intro.css" />
+
+    <!-- internal css -->
+    <style>
+      /* 
+      <selector> {
+        <property-1>: <value-1>;
+        <property-2>: <value-2>;  
+      }
+      */
+      /* A selector can be the tag name, id of the element, class name */
+
+      p {
+        padding: 10px;
+        font-style: italic;
+      }
+
+      .greeting-btn {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: 0;
+      }
+
+      /* pseudo-selector */
+      .greeting-btn:hover {
+        cursor: pointer;
+        background-color: black;
+      }
+
+      /* all */
+      /* top bottom */
+      /* top right bottom left */
+
+      .btn-group {
+        padding: 10px 0;
+        width: fit-content;
+        gap: 0;
+        display: flex;
+      }
+
+      .btn-group button {
+        background-color: #333;
+        color: white;
+        border: 0;
+        padding: 5px 10px;
+      }
+
+      .btn-group button:hover {
+        background-color: black;
+        cursor: pointer;
+      }
+
+      .btn-group button:first-child {
+        border-radius: 5px 0 0 5px;
+        /* border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; */
+      }
+
+      .btn-group button:last-child {
+        border-radius: 0 5px 5px 0;
+        /* border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline css -->
+    <p
+      style="
+        background-color: rgb(213, 200, 195);
+        color: firebrick;
+        font-size: x-large;
+      "
+    >
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quos,
+      optio sequi quae soluta debitis, ut blanditiis, saepe explicabo
+      reprehenderit sapiente cumque dignissimos sint? Et omnis laudantium error
+      nemo aspernatur!
+    </p>
+
+    <button class="greeting-btn">Hello, World!</button>
+
+    <div class="btn-group">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+    </div>
+
+    <form>
+      <input placeholder="enter your email" type="email" />
+      <input placeholder="enter your password" type="password" minlength="6" />
+      <button class="greeting-btn">Login</button>
+    </form>
+  </body>
+</html>

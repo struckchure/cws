@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Layouts: Flex</title>
+
+    <link rel="stylesheet" href="./2-flex.css" />
+  </head>
+  <body>
+    <!-- Flex -->
+    <h4>Flex Layout</h4>
+
+    <div>
+      <label>Row</label>
+      <!--
+      flex-row can be removed, it doesn't have an effect, since flex-direction is "row" by default 
+      -->
+      <div class="flex flex-row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+
+    <div>
+      <label>Column</label>
+      <div class="flex flex-col">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+
+    <div>
+      <label>Row Reverse</label>
+      <div class="flex flex-row-reverse">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+
+    <div>
+      <label>Column Reverse</label>
+      <div class="flex flex-col-reverse">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+
+    <div>
+      <label>Justify Content (X-Axis / Horizontal)</label>
+      <div class="flex justify-content">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+
+    <div>
+      <label>Align Items (Y-Axis / Vertical)</label>
+      <div
+        class="flex align-items"
+        style="height: 200px; background-color: aqua"
+      >
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+      </div>
+    </div>
+  </body>
+</html>

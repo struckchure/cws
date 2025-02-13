@@ -1,0 +1,69 @@
+html,
+body {
+  padding: 5px 0;
+  margin: 0;
+  width: 100%;
+}
+
+h4 {
+  margin: auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+.box {
+  background-color: cadetblue;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  outline: 2px solid black;
+  font-size: 16px;
+}
+
+.container {
+  width: 96%;
+  height: 200px;
+  outline: 4px solid goldenrod;
+  background-color: bisque;
+  margin: auto;
+  padding: 5px;
+}
+
+.sticky {
+  position: sticky;
+  top: 3%;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+  /* top: 10px;
+  right: 10px; */
+  top: 5.5%;
+  right: 1%;
+}
+
+.absolute {
+  position: absolute;
+  left: 1%;
+  bottom: 50%;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}

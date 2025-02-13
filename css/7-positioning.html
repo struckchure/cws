@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./7-positioning.css" />
+    <title>CSS Positioning</title>
+  </head>
+  <body>
+    <div class="box sticky z-10">Look Here</div>
+    <!-- position: sticky; -->
+    <h4>Position: Sticky</h4>
+    <div class="container">
+      <!-- sticky wouldn't exceed parent container -->
+      <div class="box sticky">Sticky</div>
+    </div>
+
+    <!-- position: static; -->
+    <h4>Position: Static</h4>
+    <div class="container">
+      <!-- static is a default behaviour, no need to add it -->
+      <div class="box static">Static</div>
+    </div>
+
+    <!-- position: fixed; -->
+    <h4>Position: Fixed</h4>
+    <!-- fixed position is relative to the entire web page -->
+    <div class="container">
+      <div class="box fixed">Fixed</div>
+    </div>
+
+    <!-- position: absolute; -->
+    <h4>Position: Absolute</h4>
+    <!-- absolute position is relative to the nearest parent element with relative position -->
+    <div class="container">
+      <div class="box absolute z-20">Absolute</div>
+    </div>
+
+    <!-- position: relative; -->
+    <h4>Position: Relative</h4>
+    <!-- relative position is used to declare a parent element for positioning other elements -->
+    <div class="container relative">
+      <div class="box absolute">Relative</div>
+    </div>
+  </body>
+</html>

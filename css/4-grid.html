@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./4-grid.css" />
+    <title>CSS Layouts: Grid</title>
+  </head>
+  <body>
+    <div>
+      <h4>Grid Flow Row</h4>
+      <div class="grid grid-flow-row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+    </div>
+
+    <div>
+      <h4>Grid Flow Column</h4>
+      <div class="grid grid-flow-col">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+      </div>
+    </div>
+
+    <div style="height: 400px">
+      <h4>Grid Auto Rows (Row Size)</h4>
+      <div class="grid grid-auto-rows">
+        <div class="box box-outline">1</div>
+        <div class="box box-outline">2</div>
+        <div class="box box-outline">3</div>
+        <div class="box box-outline">4</div>
+        <div class="box box-outline">5</div>
+        <div class="box box-outline">6</div>
+      </div>
+    </div>
+
+    <div>
+      <h4>Grid Auto Columns (Column Size)</h4>
+      <div class="grid grid-flow-col grid-auto-cols">
+        <div class="box box-outline">1</div>
+        <div class="box box-outline">2</div>
+        <div class="box box-outline">3</div>
+        <div class="box box-outline">4</div>
+        <div class="box box-outline">5</div>
+        <div class="box box-outline">6</div>
+      </div>
+    </div>
+
+    <div>
+      <h4>Grid Column</h4>
+      <div class="grid">
+        <div class="box box-outline w-full grid-col-11">1</div>
+        <div class="box box-outline w-full grid-col-12">2</div>
+        <div class="box box-outline w-full grid-col-13">3</div>
+        <div class="box box-outline w-full grid-col-12">4</div>
+        <div class="box box-outline w-full grid-col-11">5</div>
+      </div>
+    </div>
+
+    <div>
+      <h4>Grid Row</h4>
+      <div class="grid" style="height: 600px">
+        <div class="box box-outline w-full h-full grid-row-11">1</div>
+        <div class="box box-outline w-full h-full grid-row-12">2</div>
+        <div class="box box-outline w-full h-full grid-row-13">3</div>
+        <div class="box box-outline w-full h-full grid-row-12">4</div>
+        <div class="box box-outline w-full h-full grid-row-11">5</div>
+      </div>
+    </div>
+  </body>
+</html>

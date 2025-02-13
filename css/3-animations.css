@@ -1,0 +1,50 @@
+.box {
+  background-color: cadetblue;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* The animation code */
+@keyframes red-2-yellow {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+/* The element to apply the animation to */
+.red-2-yellow {
+  background-color: red;
+  /* animation-name: red-2-yellow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; */
+  animation: 4s red-2-yellow;
+}
+
+@keyframes left-2-right {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+.left-2-right {
+  position: absolute;
+  /* animation: 1s linear left-2-right infinite; */
+  /* animation: 1s ease-in-out left-2-right infinite; */
+  animation: 1s ease-in left-2-right infinite;
+}

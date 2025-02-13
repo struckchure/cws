@@ -1,0 +1,109 @@
+html,
+body {
+  padding: 5px 0;
+  margin: 0;
+  width: 100%;
+}
+
+h4 {
+  margin: auto;
+  width: fit-content;
+  padding: 10px;
+}
+
+.box {
+  background-color: cadetblue;
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  outline: 2px solid black;
+  font-size: 16px;
+}
+
+.container {
+  width: 96%;
+  height: 200px;
+  outline: 4px solid goldenrod;
+  background-color: bisque;
+  margin: auto;
+  padding: 5px;
+}
+
+/* whenever the cursor is hovered on the element, this style will be applied */
+.box-hover:hover {
+  background-color: brown;
+  /* position: absolute;
+  right: 0; */
+}
+
+@keyframes to-blue {
+  to {
+    background-color: blueviolet;
+  }
+}
+
+.box-hover-anim:hover {
+  animation: 0.5s ease-in-out to-blue forwards;
+}
+
+.visited {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.visited:visited {
+  color: rgb(35, 48, 13);
+  background-color: brown;
+}
+
+.horizontal-boxes {
+  display: flex;
+  gap: 15px;
+}
+
+.horizontal-boxes div.box:first-child {
+  background-color: blue;
+}
+
+.horizontal-boxes div.box:last-child {
+  background-color: red;
+}
+
+.horizontal-boxes div.box:nth-child(4) {
+  background-color: green;
+}
+
+.vertical-boxes {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vertical-boxes div.box {
+  width: 100%;
+}
+
+.vertical-boxes div.box:nth-child(even) {
+  background-color: aqua;
+}
+
+.vertical-boxes div.box:nth-child(odd) {
+  background-color: aquamarine;
+}
+
+.input-field {
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+.input-field:focus {
+  outline: none;
+  background-color: black;
+  color: white;
+}
